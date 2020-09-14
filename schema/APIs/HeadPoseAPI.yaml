@@ -1,0 +1,16 @@
+
+---
+$schema: http://json-schema.org/draft-04/schema#
+title: HeadPoseAPI
+type: object
+required:
+  - type
+  - rotation
+  - position
+properties:
+  type:
+    type: string
+  rotation:
+    $ref: EularAngle.json
+  position:
+    $ref: SpacialPosition.json

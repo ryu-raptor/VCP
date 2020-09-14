@@ -1,0 +1,30 @@
+{
+    "commands": [
+        {
+            "name": "ZeroCorrection",
+            "description": "ゼロ修正：現在のキャプチャ状態をデフォルトにする",
+            "argInfos": []
+        },
+        {
+            "name": "StartLipSync",
+            "description": "リップシンクを開始する",
+            "argInfos": [
+                {
+                    "name": "hardwareType",
+                    "type": "string",
+                    "description": "リップシンクの情報源",
+                    "required": false
+                }
+            ]
+        },
+        {
+            "name": "StopLipSync",
+            "argInfos": []
+        },
+        {
+            "name": "StartVoiceRecord",
+            "description": "声の収録を開始する",
+            "argInfos": []
+        }
+    ]
+}

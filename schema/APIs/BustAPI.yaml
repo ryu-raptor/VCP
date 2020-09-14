@@ -1,0 +1,10 @@
+
+---
+$schema: http://json-schema.org/draft-04/schema#
+title: BustAPI
+type: object
+required:
+  - rotation # 上半身の上下左右前後の動き(お辞儀したり)
+properties:
+  rotation:
+    $ref: EularRatio.json

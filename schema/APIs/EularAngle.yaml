@@ -1,0 +1,16 @@
+
+---
+$schema: http://json-schema.org/draft-04/schema#
+title: EularAngle
+type: object
+required:
+  - pitch
+  - roll
+  - yaw
+properties:
+  pitch:
+    type: number
+  roll:
+    type: number
+  yaw:
+    type: number

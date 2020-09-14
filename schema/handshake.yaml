@@ -1,0 +1,21 @@
+
+---
+$schema: "http://json-schema.org/draft-04/schema#"
+title: "handshake"
+type: object
+required:
+  - type
+  - role
+  - sender
+properties:
+  type:
+    type: string
+    enum: 
+      - handshake
+  role:
+    type: string
+    enum:
+      - sink
+      - source
+  sender:
+    type: string

@@ -1,0 +1,15 @@
+
+---
+$schema: http://json-schema.org/draft-04/schema#
+title: FullBodyAPI
+type: object
+required:
+  - joints
+  - hipPosition
+properties:
+  joints:
+    type: array
+    items:
+      $ref: Joint.json
+  hipPosition:
+    $ref: SpacialPosition.json

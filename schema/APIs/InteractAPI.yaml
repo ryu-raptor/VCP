@@ -1,0 +1,19 @@
+# ワールドのオブジェクトとのインタラクションを制御する
+
+---
+$schema: http://json-schema.org/draft-04/schema#
+title: InteractAPI
+type: object
+required:
+properties:
+  command:
+    type: string
+    enum:
+      - catch # 手に接触した物体をくっつける
+      - magnet # ある程度離れた場所からオブジェクトを吸い寄せる
+      - release # オブジェクトを放す
+      - canon # 手に持っているものを撃ち出す
+      - rubberBand # ひも状のものでオブジェクトとプレイヤーを結びつける
+      - esper # オブジェクトを遠隔で操作する
+  option:
+    type: object

@@ -1,0 +1,78 @@
+
+---
+$schema: http://json-schema.org/draft-04/schema#
+title: ControlAPI
+required:
+  - subtype
+properties:
+  type:
+    subtype: string
+    enum:
+      - provide
+      - request
+      - response
+  provide:
+    $ref: "#/definitions/Provide"
+  request:
+    $ref: "#/definitions/Request"
+  response:
+    $ref: "#/definitions/Response"
+
+
+definitions:
+  Provide:
+    # Provide 構造体
+    type: object
+    properties:
+      commands:
+        type: array
+        items:
+          type: object
+          properties:
+            description:
+              description: 人間が読める形式の説明
+              type: string
+            name:
+              type: string
+            argInfos: # ArgInfo 配列
+              type: array
+              items:
+                description: 引数情報
+                type: object
+                properties:
+                  name:
+                    type: string
+                  type:
+                    type: string
+                    enum:
+                      - number
+                      - string
+                      - boolean
+                  constraint: # 値の制約条件
+                    description: 値の制約条件
+                    type: object
+                    properties:
+                      maximum:
+                        type: number
+                      minimum:
+                        type: number
+                  description: # 人間が読める形式の説明
+                    description: 人間が読める形式の説明
+                    type: string
+                  required:
+                      description: 引数が必須か
+                      type: boolean
+  Request:
+    type: object
+    properties:
+      name:
+        description: コマンドの名前
+        type: string
+      args:
+        description: 引数(Key-Value Pair Array)
+        type:
+          - array
+          - null
+        items:
+          description: Key-Value Pair
+          type: object

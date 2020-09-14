@@ -1,0 +1,19 @@
+
+---
+# 0以上1以下の値で角度を指定する
+# 受信側が制限角度内でその割合で回転させる
+$schema: http://json-schema.org/draft-04/schema#
+title: EularRatio
+type: object
+required:
+  - pitch
+  - roll
+  - yaw
+properties:
+  pitch:
+    type: number
+  roll:
+    type: number
+  yaw:
+    type: number
+

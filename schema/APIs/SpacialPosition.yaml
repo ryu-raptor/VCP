@@ -1,0 +1,16 @@
+
+---
+$schema: http://json-schema.org/draft-04/schema#
+title: EularAngle
+type: object
+required:
+  - "x"
+  - "y"
+  - "z"
+properties:
+  x:
+    type: number
+  y:
+    type: number
+  z:
+    type: number

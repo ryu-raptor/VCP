@@ -1,0 +1,15 @@
+
+---
+$schema: http://json-schema.org/draft-04/schema#
+title: APIContainer(Deprecated)
+required:
+  - type # 送信API
+  - sender # 送信元ID
+  - body # 送信APIデータ
+properties:
+  type:
+    type: string
+  sender:
+    type: string
+  body:
+    type: object
