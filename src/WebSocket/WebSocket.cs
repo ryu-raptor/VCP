@@ -116,6 +116,7 @@ namespace VCP.WebSocket
         public SinkClient(string url) : base(url, new Handshake() { Role = Handshake.ClientRole.Sink })
         {
             processorMap = new Dictionary<string, List<ISinkProcessor>>();
+            processQueue = new Queue<Action>();
         }
 
         public void AddProcessor(ISinkProcessor processor)
