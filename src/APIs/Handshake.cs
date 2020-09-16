@@ -1,9 +1,9 @@
 
 namespace VCP.API {
-    public class Handshake : JsonCompatible
+    public class Handshake : APIBase
     {
         public enum ClientRole {
-            Sink, Source, Undefined, All
+            Sink, Source, Control, Undefined, All
         }
 
         public override string Type { get => "handshake"; set {} }
