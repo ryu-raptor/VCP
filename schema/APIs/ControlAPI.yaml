@@ -8,16 +8,16 @@ properties:
   type:
     subtype: string
     enum:
-      - provide
-      - request
-      - response
+      - open # 命令セットの要求
+      - provide # 命令セットの提供
+      - request # 命令
+      - response # 命令の戻り値
   provide:
     $ref: "#/definitions/Provide"
   request:
     $ref: "#/definitions/Request"
   response:
     $ref: "#/definitions/Response"
-
 
 definitions:
   Provide:
@@ -33,6 +33,7 @@ definitions:
               description: 人間が読める形式の説明
               type: string
             name:
+              description: 命令の識別子（オーバーロードはない)
               type: string
             argInfos: # ArgInfo 配列
               type: array
