@@ -1,6 +1,6 @@
 # VCP
 
-![Easy, Simple, Flexible](doc/VCP_logo.png)
+![Easy, Simple, Flexible](doc/VCP_logo_small.png)
 
 A WebSocket/JSON (also MessagePack) based VR-Control (Mo-Cap, Emotion, Lip-Sync, General-Control) communication protocol.
 
