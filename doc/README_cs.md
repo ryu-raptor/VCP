@@ -15,8 +15,8 @@ author: ryu-raptor
 ## Build
 
 ### Requirement
-- [dotnet]()
 - [netstandard 2.0](https://docs.microsoft.com/en-us/dotnet/standard/net-standard)
+- [.NET Core](https://dotnet.microsoft.com/) (Note: You can choose other .NET systems which support netstandard 2.0.)
 
 ### Dependencies
 - [sta/websocket-sharp](https://github.com/sta/websocket-sharp)
@@ -77,7 +77,7 @@ client.Send(new HeadPose() {
 ```
 
 ## Archtecture
-See VCP Specification.
+See [VCP Specification](ProtocolSpec.md).
 
 ### Namespaces
 
@@ -92,4 +92,4 @@ WebSocket interface
 
 ## API Documentation
 
-See source code in VCP.API namespace.
+See source code in `VCP.API` namespace.
