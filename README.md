@@ -14,6 +14,7 @@ Other languages: [ja](README.ja.md)
 Complete specs: [here (WIP)](doc/ProtocolSpec.md)
 
 **Note**
+
 In VCP, a word **API** refers "data container specifications".
 
 The author understands it confusing and will change this keyword to some other word (like *Schema*).
@@ -43,7 +44,7 @@ Belows are some important APIs.
 | interact         | Send interaction control (grab an object, throw it, etc.)                                       |
 | controlAPI suite | Exchange general purpose controls<br>(includes interation, recordings, lighting controls, etc.) |
 
-#### Pandoc Style Table
+#### Pandoc Style Table (for reading with local text editor)
 +------------------+------------------------------------------------------------+
 | API              | Role                                                       |
 +==================+============================================================+
