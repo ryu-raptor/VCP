@@ -1,5 +1,7 @@
 # VCP
 
+![Easy, Simple, Flexible](doc/VCP_logo.png)
+
 A WebSocket/JSON (also MessagePack) based VR-Control (Mo-Cap, Emotion, Lip-Sync, General-Control) communication protocol.
 
 VCP stands for Virtual Communication Protocol or Virtual Control Protocol
