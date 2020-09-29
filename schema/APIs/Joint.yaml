@@ -1,0 +1,13 @@
+
+---
+$schema: http://json-schema.org/draft-04/schema#
+title: FullBodyJoints
+type: object
+required:
+  - rotation
+
+properties:
+  rotation:
+    $ref: Quaternion.json
+  position:
+    $ref: SpacialPosition.json

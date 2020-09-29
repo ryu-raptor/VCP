@@ -8,8 +8,8 @@ required:
   - hipPosition
 properties:
   joints:
-    type: array
-    items:
-      $ref: Joint.json
+    type: object
+    properties:
+      $ref: FullBodyJoints.json
   hipPosition:
     $ref: SpacialPosition.json
