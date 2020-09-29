@@ -72,6 +72,6 @@ Direct communication is an optional feature and is not required for your impleme
 
 ## License
 
-"**VCP C# Reference Implementation**" and "**VCP Protocol Specification**" is licensed under MIT License.
+**VCP C# Reference Implementation** and **VCP Protocol Specification** is licensed under MIT License.
 
 See `LICENSE`
