@@ -20,9 +20,10 @@ author: ryu-raptor
 
 ### Dependencies
 - [sta/websocket-sharp](https://github.com/sta/websocket-sharp)
+    - Currently using [chenzuo/WebSocketSharp.Standard](https://www.nuget.org/packages/WebSocketSharp.Standard)
 - [System.Text.Json](https://www.nuget.org/packages/System.Text.Json)
 
-Dependencies are written in VCP.csproj, you don't need to manually install them.
+Dependencies are written in `VCP.csproj`, you don't need to manually install them.
 
 ### Build commands
 
@@ -30,7 +31,13 @@ Dependencies are written in VCP.csproj, you don't need to manually install them.
 ```
 % dotnet pack -c Release
 ```
-Now NuGet package is placed as `bin/Release/VCP.[Version].nupkg`.
+NuGet package is placed as `bin/Release/VCP.[Version].nupkg`.
+
+- Using local NuGet packages.
+```
+% nuget add package [Your NuGet Package Path] -s [Local Repository Path (usually ./packages)]
+% dotnet add [Your NuGet Package Name] -s [Local Repository Path (same as above)]
+```
 
 #### Manual dll build
 ```
