@@ -10,6 +10,8 @@ using System.Linq;
 /// <summary>VirtualControlProtocol</summary>
 namespace VCP.WebSocket
 {
+    // TODO: サーバーがすでに立っているようならサーバーを建てない仕組みの用意
+
     /// VCP.WebSocket.RelayServer
     /// リレーサーバーの通信仕様は仕様書を参照
     public class RelayServer : WebSocketBehavior
