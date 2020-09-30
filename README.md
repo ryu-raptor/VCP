@@ -10,7 +10,7 @@ Other languages: [ja](README.ja.md)
 
 ## Reference Implementation
 - C# : This repository. See `README_cs.md` ([link](doc/README_cs.md)) for more info.
-- TypeScript : [vcp-ts](github.com/ryu-raptor/vcp-ts)
+- TypeScript : [vcp-ts](https://github.com/ryu-raptor/vcp-ts)
 
 ## Protocol Spec (Brief/Draft)
 Complete specs: [here (WIP)](doc/ProtocolSpec.md)
