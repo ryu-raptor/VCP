@@ -8,7 +8,7 @@ VCP は Virtual Communication Protocol または Virtual Control Protocol の略
 
 ## リファレンス実装
 - C# (このレポジトリ). `doc/README_cs.md` ([リンク](doc/README_cs.md))に詳しい実装の情報があります．
-- TypeScript [vcp-ts](github.com/ryu-raptor/vcp-ts)
+- TypeScript [vcp-ts](https://github.com/ryu-raptor/vcp-ts)
 
 ## プロトコル概要（ドラフト，未完）
 プロトコルの詳細は[こちら（未完）](doc/ProtocolSpec.md)
