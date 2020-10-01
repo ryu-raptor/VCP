@@ -1,0 +1,3 @@
+# VCP Protocol Specification
+
+**WIP**

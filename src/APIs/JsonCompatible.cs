@@ -35,12 +35,6 @@ namespace VCP.API
         /// <returns>camelCase API name</returns>
         public abstract string Type { get; set; }
 
-        /// <summary>
-        /// Sender of this message.
-        /// </summary>
-        /// <value></value>
-        public string Sender {get; set;}
-
         public static TDerived FromJson<TDerived>(string jsonString)
         {
             var options = new JsonSerializerOptions {

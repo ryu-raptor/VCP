@@ -28,5 +28,11 @@ namespace VCP.API
                 _apiType = value;
             }
         }
+
+        /// <summary>
+        /// Sender of this message.
+        /// </summary>
+        /// <value></value>
+        public string Sender {get; set;}
     }
 }

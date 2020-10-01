@@ -1,0 +1,39 @@
+
+---
+$schema: http://json-schema.org/draft-04/schema#
+title: FullBodyJoints
+type: object
+required:
+
+# Dictionary typed structure
+properties:
+  spine:
+    $ref: Joint.json
+  spine2:
+    $ref: Joint.json
+  head:
+    $ref: Joint.json
+  l_upperArm:
+    $ref: Joint.json
+  l_lowerArm:
+    $ref: Joint.json
+  l_wrist:
+    $ref: Joint.json
+  l_upperLeg:
+    $ref: Joint.json
+  l_lowerLeg:
+    $ref: Joint.json
+  l_ankle:
+    $ref: Joint.json
+  r_upperArm:
+    $ref: Joint.json
+  r_lowerArm:
+    $ref: Joint.json
+  r_wrist:
+    $ref: Joint.json
+  r_upperLeg:
+    $ref: Joint.json
+  r_lowerLeg:
+    $ref: Joint.json
+  r_ankle:
+    $ref: Joint.json
